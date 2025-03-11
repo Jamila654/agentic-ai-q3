@@ -16,7 +16,7 @@ RUN uv pip install --system -r requirements.txt
 COPY main.py .
 
 # Expose port 8000 (Chainlit default)
-EXPOSE 8000
+EXPOSE 7860
 
 # Run Chainlit with main.py
-CMD ["chainlit", "run", "main.py", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["chainlit", "run", "main.py", "--host", "0.0.0.0", "--port", "7860"]
