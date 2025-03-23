@@ -60,5 +60,7 @@ async def on_chat_start():
     chat_history = []
     await cl.Message(content="New chat started! How can I assist you?").send()
 
-
+@cl.step
+def check_connection():
+    return "Connection test successful"
 
