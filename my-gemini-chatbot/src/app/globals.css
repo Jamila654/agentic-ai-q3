@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #e5e7eb;
+}
+.input-chat{
+  background: #e5e7eb;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@media (min-width: 300px) {
+  .signup{
+    margin-left: 80px /* 64px */;
+  }
+}
+@media (min-width: 400px) {
+  .signup{
+    margin-left: 100px /* 64px */;
+  }
+}
+@media (min-width: 440px) {
+  .signup{
+    margin-left: 120px /* 64px */;
+  }
+}
